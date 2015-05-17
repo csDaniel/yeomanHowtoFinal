@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Using Yeoman</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">How to Use Yeoman</h3>
+      </div>
+      
+      <!-- right bar menu -->
+      <div class="container col-md-3" id="sidebar">
+
+          <div id="rightCol">
+            <ul class="nav nav-stacked" id="sideMenu">           
+            </ul>
+          </div>
+
+      </div>
+
+      <div class = "col-md-8" id="mainCol">
+        <div id="mainContent">
+          <h2>Exploring the Files</h2>
+          <p class="lead">Always a pleasure scaffolding your apps.</p>
+          <p>With the process finished, let’s check out our new website! From cmd, type “grunt serve”. This will launch our website in your preferred browser.
+[img]
+Sure, this is great and all. But, what exactly did we make? Locate the folder where you specified installation. Yeoman stores the guts of your website in the /app/ folder. Your javascript file will be located in the /apps/scripts/ folder, and your css file is located in /apps/styles/. 
+
+Next, let’s open up that index.html. 
+[img]
+There’s a lot going on in there and it’s all been done for us thanks to yeoman! Without going in too deep on bootstrap, the design elements of the site are largely handed by bootstrap. Do you remember earlier, when you installed that live reload functionality for your browser? Now is the time to put it into practice. Let’s first change that ‘Allo, Allo!’ to “Good Afternoon!”
+[img][img]
+But that’s not the only thing we can change on the fly. Open main.css and let’s add a background-color to that large text box in the middle. 
+[img]
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js(.) scripts/plugins.js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

@@ -26,36 +26,47 @@
       <div class="header">
         <h3 class="text-muted">How to Use Yeoman</h3>
       </div>
-      
+    </div>
+    <div class="row">
       <!-- right bar menu -->
-      <div class="container col-md-3" id="sidebar">
-
+      <div class="container col-xs-3 col-xs-offset-1" id="sidebar">
           <div id="rightCol">
             <ul class="nav nav-stacked" id="sideMenu">           
             </ul>
           </div>
-
       </div>
 
-      <div class = "col-md-8" id="mainCol">
-        <div id="mainContent">
+      <div class = "col-xs-7" id="mainCol">
+        <div id="mainContent"> <br>
           <h2>Creating the Page</h2>
           <p class="lead">Letting Yeoman do the work for us</p>
-          <p>First, we need a specific directory for yo to create its contents. For this, type
+          <p>First, we need a specific directory for yo to create its contents. For this, type</p>
           <p class="bg-info">mkdir folderName</p>
           <p class="bg-info">cd folderName</p>
-          With all the background pieces assembled, it’s now time to create our website! To begin, 
-          we simple type
+          <p>With all the background pieces assembled, it’s now time to create our website! To begin, 
+          we simple type</p>
           <p class="bg-info">yo</p>
-          <img src="images/004yo.png">
-          From this page, you’ll be given a selection of potential projects. For our purpose, select 
+          <p>Before diving in head-first, let's examine the menu options presented</p>
+          <img src="images/030.png">
+          <p>Yeoman’s system menu is fairly simple and straightforward. Selecting “update your 
+          generators” will cause Yeoman to fetch, retrieve, and update every generator is has on 
+          file. </p>
+          <img src="images/029.png">
+          <p>In the future, if you’re just looking to update a single generator, use</p>
+          <p class="bg-info">npm install –g generator-_______</p>
+          <p>The next option is “find some help”. Selecting this will bring you to a shortcut menu. 
+          Each option will actually just launch your browser.</p>
+          <img src="images/031.png">
+          <p>Back in the yo main menu:</p>
+          <img src="images/004yo.png">         
+          <p>From this page, you’ll be given a selection of potential projects. For our purpose, select</p>
           <p class="bg-info">webapp</p>
-          On the next menu, we’ll be prompted to select which additional library to include. Rather 
-          than play around with this, leave it set to “Bootstrap” and continue. 
+          <p>On the next menu, we’ll be prompted to select which additional library to include. Rather 
+          than play around with this, leave it set to “Bootstrap” and continue. </p>
           <img src="images/005.png">
-          Yo will now automate the rest of the initialization process. 
+          <p>Yo will now automate the rest of the initialization process. </p>
           <img src="images/006.png">
-          </p></br>
+          </p>
           <p>But what exactly did we create just now? Let's explore.</p>
           <a href="exploreFiles.html">Part 4: Exploring the Files</a>
         </div>

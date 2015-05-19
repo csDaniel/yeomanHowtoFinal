@@ -26,24 +26,29 @@
       <div class="header">
         <h3 class="text-muted">How to Use Yeoman</h3>
       </div>
-      
+    </div>
+    <div class="row">
       <!-- right bar menu -->
-      <div class="container col-md-3" id="sidebar">
+      <div class="container col-xs-3 col-xs-offset-1" id="sidebar">
           <div id="rightCol">
             <ul class="nav nav-stacked" id="sideMenu">           
             </ul>
           </div>
       </div>
 
-      <div class = "col-md-8" id="mainCol">
+      <div class = "col-xs-7" id="mainCol">
         <div id="mainContent"> <br>
           <center><img src="images/intro.png"></center> </br>
           <h2>Getting Started</h2>
           <p class="lead">What exactly is Yeoman?</p>
           <p>Before we can install yeoman, we need some other parts. First, we need to install 
-          <a href="https://nodejs.org/download/">Node.js</a>. After selecting the appropriate 
-          executable and installing it, it may be necessary to restart your computer. 
-          </br>To confirm installation of node.js, in cmd, type “node –v” </p>
+          <a href="https://nodejs.org/download/">Node.js</a>.
+          Node.js is a cross-platform runtime environment. It allows websites to function under
+          event driven programming principles. However, you don't need to worry if this is all
+          too much; we'll only be using a small piece of the Node.js puzzle today: npm.
+          After selecting the appropriate executable and installing it, it may be necessary to 
+          restart your computer. </br>
+          To confirm installation of node.js, in cmd, type “node –v” </p>
           <img src="images/01.png">
           <p> With node.js installed, it will now be possible to download the 3 parts necessary 
           for yeoman: Yo, Bower, and Grunt. </p>
@@ -51,7 +56,8 @@
             <dt>Yo</dt>
             <dd>Yo is a website generator service. When launched, a user can simply toggle options
             on/off, such as bootstrap of SASS. Yo will then automate the process of constructing 
-            the framework of your future website.</dd>
+            the framework of your future website. <a href="http://yeoman.io/generators/">To search 
+            the full listing of Yeoman generators, click here</a>.</dd>
             <dt>Bower</dt>
             <dd>Bower is used in conjuction with yo. Bower is a tool which allows you to retrieve 
             and install multiple components, such as html, css, or js files. It also allows 
@@ -65,8 +71,8 @@
               <li>grunt serve.</li><p>This creates a local host for your website so you can witness 
               all the pieces in action. For added benefit, download a plugin for your browser that 
               allows active live reloading of a webpage. </p>
-              <li>grunt.</li><p>Typgin this into the cmd will compress your files into the fewest 
-              lines possible, run tests, and compile the various pieces of your site into a single 
+              <li>grunt build.</li><p>Typing this into the cmd will compress your files into the fewest 
+              lines possible, run some tests, and compile the various pieces of your site into a single 
               bundle.</p>
               <li>grunt test</li><p>While we will not be using test today, it is invaluable in 
               larger projects. This runs an automated testing suite for your web app. It’s an 
@@ -75,8 +81,9 @@
             </dd>
           </dl>
           <p>Let's now begin downloading the files.</p>
-          <a href="installing3.html">Part 2: Installing the Pieces</a>
           </p>
+          <a href="installing3.html">Part 2: Installing the Pieces</a>
+          
         </div>
       </div>
 

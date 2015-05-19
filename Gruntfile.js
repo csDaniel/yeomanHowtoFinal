@@ -374,12 +374,11 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'autoprefixer',
     'concat',
-    'cssmin',
-    'uglify',
     'copy:dist',
     'rev',
-    'usemin',
-    'htmlmin'
+    'usemin', 
+    'uglify',
+    'cssmin'
   ]);
 
   grunt.registerTask('default', [

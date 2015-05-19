@@ -22,31 +22,79 @@
     <![endif]-->
 
 
-
     <div class="container">
       <div class="header">
         <h3 class="text-muted">How to Use Yeoman</h3>
       </div>
-      
+    </div>
+    <div class="row">
       <!-- right bar menu -->
-      <div class="container col-md-3" id="sidebar">
-
+      <div class="container col-xs-3 col-xs-offset-1" id="sidebar">
           <div id="rightCol">
             <ul class="nav nav-stacked" id="sideMenu">           
             </ul>
           </div>
-
       </div>
 
-      <div class = "col-md-8" id="mainCol">
-        <div id="mainContent">
+      <div class = "col-xs-7" id="mainCol">
+        <div id="mainContent"> <br>
           <h2>Conclusion</h2>
           <p class="lead">Some extra points of Yeoman</p>
+          <p>Finally, let's examine what we made. 
+          <a href="http://web.engr.oregonstate.edu/~ofarreld/howtoDemo/">Click here to visit the final 
+          product</a>.</br>Nice work!</p>
+          <p>While learning and subsequently teaching how to use Yeoman has been a fun time, it 
+          wasn't without hiccups. Let's address some of these problems now, just in case you 
+          experience them as well</P>
+          <ul>
+            <li>npm</li><p>During debugging, you will occasionally come across an error where a certain
+            package is missing and the build command will abort. If this is the case, then your day 
+            is far from completely ruined. grunt gives some excellent feedback as to what you're 
+            exactly missing. Google for the specific package name, and install it. For example, during
+            the production of the demonstration site, the imagemin.js library was missing. In order to
+            fix this, I simple typed
+            <img src="images/028.png">
+            This prompted node project manager to search out the specific library missing from my build
+            and download it.
+            <li>Grunt</li><p>Grunt is, in my opinion, the most powerful of the three tools. In this 
+            guide today, we only examined 3 Grunt commands. However, Grunt can do so much more. For
+            example, if you were to just declare 'grunt' versus 'grunt test', then grunt will run a 
+            test and build of every portion of the folder. This can create problems with more general
+            projects; if by default you have included certain .js objects, they may cause errors
+            during the build. The grunt solution is to add '--force' to the grunt command. A safer
+            alternative is to simply use 'grunt build', as specified in this guide.</p>
+            <li>Root Location</li><p>Yeoman searches out yo-rc.json as it's root folder. This means
+            that it will search as deep as it can until this is found. When it's found, that folder
+            becomes the root directory. What does this mean for you? It means that created a yeoman
+            project within a sub-folder of a yeoman project will initialize the root folder as the 
+            new project, not your intended location. Be careful!</p>
+            <li>Minify</li><p>When Grunt compresses your websites files for the live version,
+            some changes happen. One of the more interesting changes occurs thanks to grunt-usemin.
+            To disable this, open</p>
+            <p class="bg-info">Gruntfile.js</p>
+            <img src="images/036.png">
+            <p>In this file, delete:
+            <p class="bg-info">'cssmin'</br>'htmlmin'</br>'uglify'</p>
+            Cssmin minify's your css code, htmlmin your html code, and uglify your js.</p>            
+            <li>Usemin</li><p>This grunt plug-in minimizes your html, js, and css files. It also 
+            rewrites image names into a hashable search for a faster website. However, if your img 
+            links are absolute links, this will create problems.</p>
+            <li>Relative URLs</li><p>Similar to the image problems with usemin, when writing urls,
+            I found it more effective to link via relative urls versus absolute urls. For example,
+            <p class="bg-info">href="/prepareContent.html"</p>
+            Make problems for my website and would not link properly, instead redirecting the user
+            to the absolute root.
+            <p class="bg-info">href="prepareContent.html"</p>
+            A relative url did not. The "/" made all the difference.
+            </p>
+          </ul>
           <p>Yeoman is a fantastic tool for eliminating so much of the work process. It really 
           allows someone to just dive in and begin making agile websites quickly and efficiently. 
           Mind you, this guide was only meant to serve as an introduction to Yeoman. With added 
           knowledge of angular-js, jquery, bootstrap, SASS, and more, it’s possible to expand your 
           website in any direction.</p>
+          <p>In fact, this guide you're currently viewing was created through the tools offered by
+          Yeoman!</p>
           <ul>Notes & Documentation
             <li> <a href="http://yeoman.io">Yeoman Official Website</a> </li>
             <li> <a href="http://bower.io/"> Bower Official Website</a> </li>

@@ -20,52 +20,77 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-
+    
     <div class="container">
       <div class="header">
         <h3 class="text-muted">How to Use Yeoman</h3>
       </div>
-      
+    </div>
+    <div class="row">
       <!-- right bar menu -->
-      <div class="container col-md-3" id="sidebar">
-
+      <div class="container col-xs-3 col-xs-offset-1" id="sidebar">
           <div id="rightCol">
             <ul class="nav nav-stacked" id="sideMenu">           
             </ul>
           </div>
-
       </div>
 
-      <div class = "col-md-8" id="mainCol">
-        <div id="mainContent">
+      <div class = "col-xs-7" id="mainCol">
+        <div id="mainContent"> <br>
           <h2>Installation</h2>
           <p class="lead">Let's install them!</p>
-          <p> In order to use yo, grunt, and bow, we need to first download them. This can be 
-          handled by typing 
+          <p> In order to use yo, grunt, and bow, we need to first download them. With npm safely 
+          installed, we can go ahead and handle this. Open comand line and type</p> 
           <p class="bg-info">npm install --global yo bower grunt-cli</p> 
-          Let’s break that down to understand what you’re putting into the command line. 
+          <p>Let’s break that down to understand what you’re putting into the command line. </p>
           <p class="bg-info">npm</p>
-          Npm is node.js packet manager. It allows you to connect and download various packages and 
-          applications. The next confusing part is <p class="bg-info">--global</p>. If this 
-          is not typed, then any new program will be installed into your current local directory. 
-          Following this you have <p class="bg-info">yo bower grunt-cli</p>. These are the specific 
-          programs we’ll be needed to actually make yeoman work. </p>
-          <p> Now, it is possible to simply install all 3 separate. However for today’s example, we’re 
-          doing it as one line.</p> </br>
+          <p>Npm is node.js packet manager. It allows you to connect and download various packages and 
+          applications. The next confusing part is </p>
+          <p class="bg-info">--global</p> 
+          <p>If this is not typed, then any new program will be installed into your current local directory.
+          As a result, you will not be able to run yo as a command as it's not recognized by your entire
+          system. Think js or c++ and scope. In the future, you can also simple write "--g". 
+          Following this you have 
+          <p class="bg-info">yo bower grunt-cli</p>. 
+          <p>These are the specific programs we’ll be needed to actually make yeoman work. </p>
+          <p> Now, it is possible to simply install all 3 separate such as </p>
+          <p class="bg-info">npm install --global yo </br>
+          npm install --global bower </br>
+          npm install --global grunt-cli</p>
+          <p>However for today’s example, we’re doing it as one line.</p>
           <img src="images/002.png">
+          <p> Let's continute to explore ndm. Ndm allows us to effortless add new libraries to our
+          environment, so lets do that now. First, we need to search for what we’re looking to 
+          install. Let’s practice with installing envcheck. Envcheck is a simple library that just 
+          checks if your Yeoman environment is healthy and up to date. If you’re missing a basic 
+          building block for all potential projects, it will tell you. Otherwise, it doesn’t change 
+          anything.</p>
+          <img src="images/032.png">
+          <p>We’ll install it by typing</p>
+          <p class="bg-info">npm install –g envcheck</p>
+          <img src="images/033.png">
+          <p>Now lets run it:</p>
+          <img src="images/034.png">
+          <p>This led me to test my current npm version and sure enough, it was correct in that mine 
+          was out of date. However, the command</p>
+          <p class="bg-info">npm install –global npm</p>
+          <p>Did not work properly. The correct way to update npm to the most recent version is</p>
+          <p class="bg-info">npm install –save latest-version</p>
+          <img src="images/035.png">
+          <p>The difference between –global and –save is that save not only installs it, but also 
+          update your package.json file with up to date information.</p>         
+          
           <p>Finally, let’s revisit Bower. In order to build a modern website, it’s necessary to have 
           modern tools. For your first few projects, you’ll need some basic libraries. For fun, lets 
-          run 
+          run </p>
           <p class="bg-info">bower search bootstrap</p>
           <img src="images/003.png"></br>
-          As you can see, there’s a lot here. Bower combs through github for compatible projects. For 
-          us, let’s just grab bootstrap and generator-angular. Install these via typing
+          <p>As you can see, there’s a lot here. Bower combs through github for compatible projects. For 
+          us, let’s just grab bootstrap and generator-angular. Install these via typing</p>
           <p class="bg-info">bower install bootstrap</p>
           <p class="bg-info">bower install generator-angular</p>
-          With this finished, it's time to move on actually running Yeoman.</br>
+          <p>With this finished, it's time to move on actually running Yeoman.</p>
           <a href="createPage.html">Part 3: Creating the Page</a>
-          </p>
         </div>
       </div>
 
